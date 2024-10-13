@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = array(
         'email' => $email,
-        'password' => password_hash($password, PASSWORD_DEFAULT) 
+        'password' => password_hash($password, PASSWORD_DEFAULT)
     );
 
     $json_data = file_get_contents('users.json');
@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     file_put_contents('users.json', json_encode($users));
 
-    echo "User registered successfully!";
+    header("Location: register.html?success=true");
+    exit();
 }
 ?>
