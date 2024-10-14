@@ -14,7 +14,7 @@ function togglePassword() {
 function validateLogin(event) {
     event.preventDefault(); 
 
-    const email = document.getElementById('email').value.trim();
+    const email = document.getElementById('email').value.trim().toLowerCase();
     const password = document.getElementById('password').value;
     const messageDiv = document.getElementById('message');
 
