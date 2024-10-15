@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #c1aceb;
+    background: linear-gradient(135deg, #194B32 0%, #D0E4AE 100%);
 }
 
 .login-box {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 section a {
-    color: #3b3b3b;
+    color: #333;
 }
 
 .input-submit {
