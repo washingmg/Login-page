@@ -34,9 +34,9 @@ Antes de executar o projeto, você precisará ter o seguinte instalado em sua m�
 
 ## Estrutura do Projeto
 
-- index.html - A página principal que contém o formulário de login.
-- style.css - Arquivo CSS para estilização da página.
-- script.js - Arquivo JavaScript para validação e lógica da página.
+- pages/login.html - A página principal que contém o formulário de login.
+- style/ - Pasta para estilização da página.
+- javascript/ - Pasta para validação e lógica da página.
 
 ## Licença
 Este projeto é licenciado sob a MIT License.
