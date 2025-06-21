@@ -7,7 +7,7 @@ function displayEmails() {
 
     if (users.length === 0) {
         messageDiv.className = 'message error';
-        messageDiv.textContent = 'Nenhum email registrado encontrado.';
+        messageDiv.textContent = 'No registered email found.';
         return;
     }
 
@@ -18,7 +18,7 @@ function displayEmails() {
     });
 
     messageDiv.className = 'message success';
-    messageDiv.textContent = 'Emails carregados com sucesso!';
+    messageDiv.textContent = 'Emails loaded successfully!';
 }
 
 window.onload = displayEmails;

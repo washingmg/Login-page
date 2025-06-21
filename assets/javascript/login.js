@@ -14,6 +14,12 @@ function togglePassword() {
 function validateLogin(event) {
     event.preventDefault(); 
 
+    const form = document.querySelector('form');
+    if (!form.checkValidity()) {
+        form.reportValidity(); 
+        return; 
+    }
+
     const email = document.getElementById('email').value.trim().toLowerCase();
     const password = document.getElementById('password').value;
     const messageDiv = document.getElementById('message');
@@ -26,19 +32,18 @@ function validateLogin(event) {
     const user = users.find(user => user.email === email && user.password === btoa(password));
 
     if (user) {
-        messageDiv.textContent = 'Login bem-sucedido!';
+        messageDiv.textContent = 'Login successful!';
         messageDiv.classList.add('success'); 
         messageDiv.style.display = 'block'; 
 
         setTimeout(() => {
-            window.location.href = 'home.html'; 
+            window.location.href = 'auth/pages/home.html';
         }, 1000);
     } else {
-        messageDiv.textContent = 'Email ou senha incorretos.';
+        messageDiv.textContent = 'Incorrect email or password.';
         messageDiv.classList.add('error'); 
         messageDiv.style.display = 'block';
     }
 }
-
 
 document.getElementById('submit').addEventListener('click', validateLogin);
