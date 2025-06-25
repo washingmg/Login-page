@@ -61,9 +61,9 @@ function validateForm(event) {
     showMessage('Registration successful! Redirecting to login page...', 'success');
 
     setTimeout(() => {
-            window.location.href = 'home.html';
-        }, 1000);
-    }
+        window.location.href = `${window.location.origin}/Login-page/auth/pages/home.html`;
+    }, 1000);
+}
 
 function showMessage(text, type) {
     const messageDiv = document.getElementById('message');
