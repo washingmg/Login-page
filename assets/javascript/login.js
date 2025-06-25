@@ -37,7 +37,7 @@ function validateLogin(event) {
         messageDiv.style.display = 'block'; 
 
         setTimeout(() => {
-            window.location.href = 'home.html';
+            window.location.href = 'auth/pages/home.html';
         }, 1000);
     } else {
         messageDiv.textContent = 'Incorrect email or password.';
