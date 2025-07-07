@@ -1,42 +1,67 @@
-# Login Page
+# Página de Autenticação 
 
-Uma simples página de login desenvolvida em HTML, CSS e JavaScript, projetada para ser intuitiva e responsiva. Este projeto demonstra como implementar um sistema básico de autenticação de usuários em uma aplicação web.
+Este projeto é uma interface completa de **autenticação de usuários**, composta por três páginas principais: **Login**, **Cadastro** e **Recuperação de Senha**.  
+Desenvolvido com **HTML**, **CSS** e **JavaScript**, o foco é oferecer um layout moderno, responsivo e com interações funcionais.
 
-# Site login page
-   - https://washingmg.github.io/Login-page/pages/login
-   
-## Pré-requisitos
+🔗 **Acesse Online:**  
+[https://washingmg.github.io/Login-page/auth/pages/login](https://washingmg.github.io/Login-page/auth/pages/login)
 
-Antes de executar o projeto, você precisará ter o seguinte instalado em sua máquina:
+---
 
-- [Navegador Web](https://www.google.com/chrome/) (Chrome, Firefox, etc.)
-- Um editor de código (opcional, mas recomendado, como [Visual Studio Code](https://code.visualstudio.com/))
+## 📸 Screenshots
 
-## Funcionalidades
+### 🔐 Página de Login
 
-- Formulário de login com validação básica
-- Estilo responsivo para dispositivos móveis
-- Feedback de erro para entradas inválidas
+![Página de Login](https://github.com/washingmg/Login-page/blob/main/assets/images/login.png)
 
-## Como Usar
+### 📝 Página de Cadastro
 
-1. Clone o repositório:
+![Página de Cadastro](https://github.com/washingmg/Login-page/blob/main/assets/images/create.png)
 
-   ```bash
-   git clone https://github.com/washingmg/Login-page.git
-   
-2. Navegue até o diretório do projeto:
+### ❓ Página de Recuperação de Senha
 
-    ```bash
-    cd Login-page
+![Página de Recuperação de Senha](https://github.com/washingmg/Login-page/blob/main/assets/images/recover_password.png)
 
-3. Abra o arquivo login.html em seu navegador.
+---
 
-## Estrutura do Projeto
+## 🌐 Páginas Disponíveis
 
-- pages/login.html - A página principal que contém o formulário de login.
-- style/ - Pasta para estilização da página.
-- javascript/ - Pasta para validação e lógica da página.
+1. **Login**
+   - Formulário com e-mail e senha  
+   - Validação com JavaScript  
+   - Links para cadastro e recuperação de senha
 
-## Licença
-Este projeto é licenciado sob a MIT License.
+2. **Cadastro**
+   - Campos: nome, e-mail, senha e confirmação de senha  
+   - Verificação de correspondência de senhas via JS
+
+3. **Recuperação de Senha**
+   - Campo para e-mail
+     
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6)**
+
+## ⚙️ Funcionalidades
+
+- Validação de formulários
+- Feedbacks visuais ao usuário
+- Navegação entre páginas
+- Responsividade (funciona bem em mobile e desktop)
+- Interações básicas simuladas com JavaScript
+
+## 🧪 Como Testar Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/washingmg/Login-page
+
+# Acesse uma das páginas
+cd Login-page/auth/pages/login
+
+# Abra o arquivo login.html em seu navegador ou no Go Live (extensão)
+
